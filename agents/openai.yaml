@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dependency Outage Triage"
+  short_description: "Check vendor incidents before changing code"
+  default_prompt: "Use $triage-dependency-outages to determine whether my application failure is caused by an external provider outage."
