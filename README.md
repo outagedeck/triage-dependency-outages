@@ -1,8 +1,8 @@
 # Dependency Outage Triage
 
-An installable agent skill for checking whether a cloud or SaaS dependency has a live incident before you roll back a deployment, rotate credentials, or change working code.
+An installable agent skill for checking vendor-published incident evidence before you roll back a deployment, rotate credentials, or change working code.
 
-It uses [OutageDeck](https://outagedeck.com/?utm_source=github&utm_medium=repository&utm_campaign=openclaw_skill) as a read-only evidence source for current status, affected services, incident timelines, and source links across 170+ providers. Public checks need no account or API key.
+It uses [OutageDeck](https://outagedeck.com/?utm_source=github&utm_medium=repository&utm_campaign=openclaw_skill) as a read-only evidence source for current status, affected services, incident timelines, and source links across cloud and SaaS vendors. Public checks need no account or API key.
 
 ## Install
 

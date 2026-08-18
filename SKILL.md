@@ -1,6 +1,6 @@
 ---
 name: triage-dependency-outages
-description: Check whether cloud and SaaS dependencies have live incidents before debugging application, CI, deployment, API, authentication, or network failures. Use when a user asks whether a provider is down, reports 5xx responses, timeouts, rate limits, or unexplained integration failures, needs a vendor incident timeline, wants a stack-wide status check or uptime comparison, or needs evidence to distinguish a provider failure from a code regression. Do not use for a clearly local-only failure with no external dependency.
+description: Check whether cloud and SaaS dependencies are reporting incidents before debugging application, CI, deployment, API, authentication, or network failures. Use when a user asks whether a provider is down, reports 5xx responses, timeouts, rate limits, or unexplained integration failures, needs a vendor incident timeline, wants a stack-wide status check or uptime comparison, or needs evidence to distinguish a provider failure from a code regression. Do not use for a clearly local-only failure with no external dependency.
 ---
 
 # Dependency outage triage
@@ -16,7 +16,7 @@ Use OutageDeck's public interfaces to establish vendor evidence before changing 
   - Find active incidents with `GET https://outagedeck.com/api/v1/incidents?provider=<slug>&state=active&limit=10`.
   - Fetch an incident with `GET https://outagedeck.com/api/v1/incidents/<incident-slug>`.
 - The REST fallback covers current status and incident evidence. It does not replace MCP uptime and cross-vendor report tools; disclose that limitation instead of inventing historical results.
-- If neither interface is available, say the live status check could not be performed and continue with ordinary local diagnosis.
+- If neither interface is available, say the provider status check could not be performed and continue with ordinary local diagnosis.
 
 ## Workflow
 
